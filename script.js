@@ -49,27 +49,27 @@ document.getElementById("display").innerHTML = arr.join('');
 }
 //divide
 document.getElementById('divide').onclick = function (e) {
-arr.push("div");
+arr.push("/");
 document.getElementById("display").innerHTML = arr.join('');
 }
 //times
 document.getElementById('times').onclick = function (e) {
-arr.push("mult");
+arr.push("*");
 document.getElementById("display").innerHTML = arr.join('');
 }
 //minus
 document.getElementById('minus').onclick = function (e) {
-arr.push("min");
+arr.push("-");
 document.getElementById("display").innerHTML = arr.join('');
 }
 //plus
 document.getElementById('plus').onclick = function (e) {
-arr.push("plus");
+arr.push("+");
 document.getElementById("display").innerHTML = arr.join('');
 }
 //decimal
 document.getElementById('decimal').onclick = function (e) {
-arr.push("dec");
+arr.push(".");
 document.getElementById("display").innerHTML = arr.join('');
 }
 //equals
@@ -77,7 +77,8 @@ document.getElementById('equals').onclick = function (e) {
 console.log(arr.join(""))
 let a = arr.join("")
 console.log(a)
-document.getElementById("display").innerHTML = arr.join('');
+document.getElementById("display").innerHTML = eval(a);
+arr=[];
 }
 //clear
 document.getElementById('clear').onclick = function (e) {
